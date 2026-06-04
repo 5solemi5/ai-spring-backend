@@ -13,4 +13,5 @@ public class Sports {
     private String category;
     private int playerCount;
     private boolean indoor;
+
 }
