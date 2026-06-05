@@ -12,14 +12,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.net.URI;
 import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
-@RequiredArgsConstructor
 @RequestMapping("/items")
-public class ItemController {
+@RequiredArgsConstructor
+public class ItemPersistenceController {
 
     private final ItemService itemService;
 
