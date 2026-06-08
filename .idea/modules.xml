@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ai-backend.iml" filepath="$PROJECT_DIR$/.idea/ai-backend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.sesac.ai-backend.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.sesac.ai-backend.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.sesac.ai-backend.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.sesac.ai-backend.test.iml" />
     </modules>
   </component>
 </project>

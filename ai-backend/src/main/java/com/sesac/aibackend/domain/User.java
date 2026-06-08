@@ -41,4 +41,22 @@ public class User {
     @Column(nullable = false, length = 20)
     private Role role;
 
+    /** 인증 출처: "LOCAL"(폼 가입) 또는 "GOOGLE"(소셜 로그인). */
+    @Builder.Default
+    @Column(nullable = false, length = 20)
+    private String provider = "LOCAL";
+
+    /** 소셜 공급자의 안정적 고유 식별자(OIDC sub). LOCAL 사용자는 NULL. */
+    @Column(name = "provider_id", length = 255)
+    private String providerId;
+
+    public static User oauthUser(String email, String providerId) {
+        return User.builder()
+                .username(email)
+                .passwordHash(null)
+                .role(Role.USER)
+                .provider("GOOGLE")
+                .providerId(providerId)
+                .build();
+    }
 }
