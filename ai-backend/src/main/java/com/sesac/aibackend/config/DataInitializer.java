@@ -48,7 +48,7 @@ public class DataInitializer {
             User alice = userRepository.save(User.builder()
                     .username("alice")
                     .passwordHash(passwordEncoder.encode("password123"))
-                    .role(Role.ADMIN)
+                    .role(Role.USER)
                     .build());
 
             chatLogRepository.save(ChatLog.builder()
